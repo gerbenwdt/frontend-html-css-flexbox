@@ -1,1 +1,50 @@
 /*Schrijf hier jouw CSS*/
+/* Flex container Body */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Flex items in Body */
+header{
+    flex-basis: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+main{
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+footer{
+    flex-basis: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* Flex container Main */
+main{
+    display: flex;
+}
+
+/* Flex items in Main */
+article{
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    order: 2;
+}
+nav{
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    order: 1;
+}
+aside{
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    order: 3;
+}
+

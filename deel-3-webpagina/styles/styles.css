@@ -1,1 +1,87 @@
 /*Schrijf hier jouw css*/
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200&family=Poppins:wght@300;500&display=swap');
+/*CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flex container Body */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F2F3D9;
+    font-family: 'Geologica',Arial, sans-serif;
+}
+
+/* Flex items in Body */
+.top-bar{
+    background-color: #030027;
+    color: #F2F3D9;
+    flex-basis: 100px;
+}
+.title{
+    font-weight: 200;
+    text-align: center;
+    padding: 40px 40px;
+}
+.articles{
+    padding: 0 40px 40px 40px;
+}
+
+/* Flex container Top-bar */
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* Flex items in Top-bar */
+.brand{
+    font-weight: 200;
+    font-size: 20px;
+    text-transform: uppercase;
+    justify-self: left;
+}
+nav{
+
+}
+
+/* Flex container Nav */
+nav{
+    display: flex;
+    flex-basis: 400px;
+    justify-content: space-between;
+}
+
+/* Flex items in Nav */
+.nav-option{
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/* Flex container Articles */
+.articles{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    flex-wrap: wrap;
+}
+
+/* Flex items in Articles */
+.article-text{
+    background-color: #C16E70;
+    flex-basis: 280px;
+    height: 350px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

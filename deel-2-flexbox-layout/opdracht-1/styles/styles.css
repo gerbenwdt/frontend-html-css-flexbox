@@ -1,1 +1,53 @@
 /*Schrijf hier jouw CSS*/
+/* Flexbox container for Sections */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* Sections */
+header{
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+main{
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+footer{
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* Flexbox container for Items in main */
+.flex-container main{
+    display: flex;
+    flex-basis: auto;
+}
+
+/* Items in main */
+article{
+    flex-basis: 600px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    order: 1;
+}
+nav{
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    order: 3;
+}
+aside{
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    order: 2;
+}
+
+/* --- */

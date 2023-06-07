@@ -1,1 +1,63 @@
 /*Schrijf hier jouw CSS*/
+/* Flex container Body */
+body{
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Flex item in Body */
+.outer-col-1{
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.outer-col-2{
+    flex-basis: 100%;
+}
+
+/* Flex container Outer-col-2 */
+.outer-col-2{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex items in Outer-col-2 */
+header{
+    flex-basis: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.inner-row{
+    flex-basis: 100%;
+}
+
+/* Flex container Inner-row */
+.inner-row{
+    display: flex;
+}
+
+/* Flex items in Inner-row */
+.inner-col{
+    flex-basis: 100%;
+}
+aside{
+    flex-basis: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* Flex container Inner-col */
+.inner-col{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex items in Inner-col */
+article{
+    flex-basis: 100%;
+}
+footer{
+    flex-basis: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
